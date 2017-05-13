@@ -1,3 +1,20 @@
-<p>
-  movies works!
-</p>
+<div class="container">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-md-9 divCol">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                    <li class="breadcrumb-item active">Movies</li>
+                </ol>
+                <a class="btn btn-sm btn-info" routerLink="movies" > back </a>
+                <router-outlet></router-outlet>
+                
+                <div class="jumbotron">
+                </div>
+
+            </div>
+        <div class="col-md-3 divCol" id="divColSideBar">
+            <h2>Movies Menu</h2>
+            <a class="nav-link" routerLink="actortoevoegen"  routerLinkActive="active">Actor toevoegen</a><br>
+        </div>
+    </div>
+</div>
